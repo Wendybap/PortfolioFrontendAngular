@@ -1,0 +1,120 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.wrapper--header {
+  background-color: #ffffff;
+  //   position: sticky;
+  //   top: 0 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  //   z-index: 100;
+}
+.nav--header {
+  max-width: 1127px;
+  margin: 0 auto;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  // align-items: center;
+  height: 53px;
+  background-color: #e90d0d;
+}
+.bi-linkedin {
+  font-size: 1.5em;
+  color: #0a66c2;
+  object-fit: contain;
+}
+
+// .search--bar {
+//   height: 33px;
+//   margin-left: 8px;
+//   padding-left: 10px;
+//   display: flex;
+//   align-items: center;
+//   border-radius: 4px;
+//   background-color: #eef3f8;
+//   width: 299px;
+//   margin-right: 100px;
+// }
+// .search--bar > input {
+//   border: none;
+//   outline: 0;
+//   padding-left: 10px;
+//   height: 33px;
+//   font-size: 16px;
+//   transition: all 3ms ease-in-out;
+//   color: rgba(0, 0, 0.6);
+//   background: none;
+// }
+// .bi-search {
+//   font-size: 0.8em;
+// }
+
+// navbar-Icons
+.header--icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00000099;
+  cursor: pointer;
+  max-width: 80px;
+  height: 53px;
+  width: 100%;
+  margin: 0;
+  text-decoration: none;
+
+  &:hover {
+    color: #000000;
+  }
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 100;
+}
+.bi-house-door-fill,
+.bi-people-fill,
+.bi-briefcase-fill,
+.bi-chat-dots-fill,
+.bi-bell-fill,
+.bi-grid-3x3-gap-fill,
+.bi-person-circle {
+  font-size: 1.5em;
+  object-fit: contain;
+}
+// ? ICONO DE FLECHA HACIA ABAJO NO LO ESTOY USANDO PORQUE NO SE COMO
+// .bi-caret-down-fill {
+//   display: flex;
+//   flex-direction: column;
+//   // object-fit: contain;
+// }
+.premiun--text {
+  font-size: 8.5px;
+  // width: 124px;
+  text-align: center;
+  text-decoration: underline;
+  color: #915907;
+  // font-weight: 400;
+}
+
+//? TENGO QUE ACOMODARLAS------------- @media search--bar---------
+@media only screen and (max-width: 1000px) {
+  .search--bar {
+    width: 300px;
+  }
+  .header--icons {
+    display: none;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .search--bar {
+    width: 100px;
+    margin-right: 3px;
+
+    & input {
+      width: 100px;
+    }
+  }
+}
